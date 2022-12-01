@@ -1,3 +1,4 @@
 add_library(MUST_LLVMADT INTERFACE)
 
 target_include_directories(MUST_LLVMADT INTERFACE include)
+target_link_libraries(MUST_LLVMADT INTERFACE MUST_LLVMSupport)

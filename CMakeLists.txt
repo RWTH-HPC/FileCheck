@@ -7,9 +7,6 @@ project(FileCheck
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# For configured files
-include_directories(${CMAKE_CURRENT_BINARY_DIR}/include)
-add_definitions(-DHAVE_UNISTD_H)
 
 # Naming it just FileCheck leads to collisions with the LLVM cmake module
 add_executable(MUST_FileCheck FileCheck.cpp)

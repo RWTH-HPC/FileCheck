@@ -165,4 +165,6 @@ add_library(MUST_LLVMSupport
         )
 
 target_include_directories(MUST_LLVMSupport PUBLIC include)
-target_link_libraries(MUST_LLVMSupport PUBLIC MUST_LLVMADT MUST_LLVMDemangle MUST_llvm-c)
+target_link_libraries(MUST_LLVMSupport
+        PRIVATE MUST_LLVMADT MUST_LLVMDemangle
+        PUBLIC MUST_FileCheckConfig MUST_llvm-c)
