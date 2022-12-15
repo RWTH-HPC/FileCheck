@@ -43,5 +43,5 @@ configure_file(
         ${CMAKE_BINARY_DIR}/include/llvm/Config/abi-breaking.h
 )
 
-add_library(MUST_FileCheckConfig INTERFACE)
-target_include_directories(MUST_FileCheckConfig INTERFACE ${CMAKE_BINARY_DIR}/include)
+add_library(FileCheckConfig_Standalone INTERFACE)
+target_include_directories(FileCheckConfig_Standalone INTERFACE ${CMAKE_BINARY_DIR}/include)

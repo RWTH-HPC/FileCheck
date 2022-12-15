@@ -1,9 +1,9 @@
-add_library(MUST_LLVMFileCheck FileCheck.cpp)
+add_library(LLVMFileCheck_Standalone FileCheck.cpp)
 
-set_target_properties(MUST_LLVMFileCheck
+set_target_properties(LLVMFileCheck_Standalone
         PROPERTIES
         CXX_STANDARD 14
         CXX_STANDARD_REQUIRED ON)
 
-target_link_libraries(MUST_LLVMFileCheck PUBLIC MUST_LLVMSupport MUST_LLVMADT)
-target_include_directories(MUST_LLVMFileCheck PUBLIC include)
+target_link_libraries(LLVMFileCheck_Standalone PUBLIC LLVMSupport_Standalone LLVMADT_Standalone)
+target_include_directories(LLVMFileCheck_Standalone PUBLIC include)

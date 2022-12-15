@@ -1,4 +1,4 @@
-add_library(MUST_LLVMADT INTERFACE)
+add_library(LLVMADT_Standalone INTERFACE)
 
-target_include_directories(MUST_LLVMADT INTERFACE include)
-target_link_libraries(MUST_LLVMADT INTERFACE MUST_LLVMSupport)
+target_include_directories(LLVMADT_Standalone INTERFACE include)
+target_link_libraries(LLVMADT_Standalone INTERFACE LLVMSupport_Standalone)

@@ -1,3 +1,3 @@
-add_library(MUST_llvm-c INTERFACE)
+add_library(llvm-c_Standalone INTERFACE)
 
-target_include_directories(MUST_llvm-c INTERFACE include)
+target_include_directories(llvm-c_Standalone INTERFACE include)

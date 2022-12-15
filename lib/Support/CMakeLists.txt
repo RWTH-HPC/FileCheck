@@ -8,7 +8,7 @@ macro(llvm_update_compile_flags)
   _llvm_update_compile_flags(${ARGN})
 endmacro()
 
-add_library(MUST_LLVMSupport
+add_library(LLVMSupport_Standalone
         #AddressRanges.cpp
         #AArch64TargetParser.cpp
         ABIBreak.cpp
@@ -164,7 +164,7 @@ add_library(MUST_LLVMSupport
         #Watchdog.cpp
         )
 
-target_include_directories(MUST_LLVMSupport PUBLIC include)
-target_link_libraries(MUST_LLVMSupport
-        PRIVATE MUST_LLVMADT MUST_LLVMDemangle
-        PUBLIC MUST_FileCheckConfig MUST_llvm-c)
+target_include_directories(LLVMSupport_Standalone PUBLIC include)
+target_link_libraries(LLVMSupport_Standalone
+        PRIVATE LLVMADT_Standalone LLVMDemangle_Standalone
+        PUBLIC FileCheckConfig_Standalone llvm-c_Standalone)

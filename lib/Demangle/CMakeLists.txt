@@ -1,4 +1,4 @@
-add_library(MUST_LLVMDemangle
+add_library(LLVMDemangle_Standalone
         Demangle.cpp
         ItaniumDemangle.cpp
         MicrosoftDemangle.cpp
@@ -7,4 +7,4 @@ add_library(MUST_LLVMDemangle
         DLangDemangle.cpp
         )
 
-target_include_directories(MUST_LLVMDemangle PUBLIC include)
+target_include_directories(LLVMDemangle_Standalone PUBLIC include)
