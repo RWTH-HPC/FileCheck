@@ -1,5 +1,5 @@
 
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION 3.13.4...3.27.4)
 project(FileCheck
         VERSION 15.0.6
         DESCRIPTION "A standalone build of LLVM FileCheck")
